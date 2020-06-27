@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: "Boogaloo";
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
 }
 
 header h2 {
-    color: #CEC8FF;
+    color: black;
 }
 
 .site-footer {
@@ -23,8 +23,10 @@ header h2 {
     /* set margin = 0 to remove margin on jumbotron & push navbar tight to jubotron */
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    color: white;
+    /*background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);*/
+    background-image: url('../../img/jumbotron.png');
+    background-size: 100%;
+    color: black;
 }
 
 .row-content {
