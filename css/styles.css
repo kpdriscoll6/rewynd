@@ -15,7 +15,7 @@ header h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
+    background-color: #F9F8EB;
     padding: 20px 0;
 }
 
@@ -23,9 +23,50 @@ header h2 {
     /* set margin = 0 to remove margin on jumbotron & push navbar tight to jubotron */
     margin: 0;
     padding: 30px;
-    /*background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);*/
-    background-image: url('../../img/jumbotron.png');
-    background-size: 100%;
+    background-color: #fff7e6;
+    /*
+    background-image:
+    linear-gradient(
+        290deg, 
+        #fff7e6,
+        #fff7e6 70%,
+        #0283c7 70%,
+        #0283c7 74.75%,
+        #fff7e6 74.5%,
+        #fff7e6 75%,
+        #78ab2a 75%,
+        #78ab2a 79.5%,
+        #fff7e6 79.5%,
+        #fff7e6 80%,
+        #fde916 80%,
+        #fde916 84.5%,
+        #fff7e6 84.5%,
+        #fff7e6 85%,
+        #f46716 85%,
+        #f46716 89.5%,
+        #fff7e6 89.5%,
+        #fff7e6 90%,
+        #fd2475 90%,
+        #fd2475 94.5%,
+        #fff7e6 94.5%,
+        #fff7e6 100%
+      ); */
+      /*
+    linear-gradient(
+        60deg, 
+        #f8f2dc,
+        #f8f2dc 70%,
+        #f9bf03 70%,
+        #f9bf03 75%,
+        #f87d07 75%,
+        #f87d07 80%,
+        #f9720b 80%,
+        #f9720b 85%,
+        #bb0d2a 85%,
+        #bb0d2a 90%,
+        #cb279d 90%,
+        #cb279d 100%
+      );*/
     color: black;
 }
 
@@ -36,5 +77,6 @@ header h2 {
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color:  #F9F8EB;
+    height: 150px;
 }
