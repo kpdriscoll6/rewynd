@@ -1,32 +1,33 @@
 $color-primary: red; /*placeholders */
-$color-secondary:blue; /*placeholders */
-$color-mid: #F9F8EB;
-$color-dark: #532D1C;
+$color-secondary: blue; /*placeholders */
+$color-mid: #f9f8eb;
+$color-dark: #532d1c;
 $color-dark-font: #333333;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-breadcrumb-background: #f3e1d0;
 
 $body-font: "Arial";
 $header-font: "Boogaloo";
-$title-font:"Boogaloo";
+$title-font: "Boogaloo";
 
-
-.title{
+.title {
   font-family: $title-font;
   font-size: 225%;
   color: $color-dark-font;
-  }
+}
 
 .logo {
-  height: auto; 
+  height: auto;
   width: 60px;
-  filter: brightness(0) saturate(100%) invert(20%) sepia(7%) saturate(3813%) hue-rotate(333deg) brightness(94%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(20%) sepia(7%) saturate(3813%)
+    hue-rotate(333deg) brightness(94%) contrast(97%);
 }
 
 .navbar-light .nav-item.active .nav-link,
 .navbar-light .nav-item .nav-link:active,
 .navbar-light .nav-item .nav-link:focus,
 .navbar-light .nav-item:hover .nav-link {
-    color:$color-dark-font;
+  color: $color-dark-font;
 }
 
 body {
@@ -40,19 +41,34 @@ h3 {
 }
 
 h2 {
-  color: $color-primary;
+  color: $color-secondary;
 }
 
-header {
-  h2 {
-    color: $color-pale;
+div {
+  label {
+    font-weight: bold;
   }
 }
 
+// header {
+//   h2 {
+//     color: $color-pale;
+//   }
+// }
+
+.breadcrumb{
+  background-color: $color-breadcrumb-background;
+  font-family: $title-font;
+  font-size: 25px;
+}
+
+
 .site-footer {
-  background-color:  $color-mid;
+  background-color: $color-mid;
   padding: 20px 0;
 }
+
+
 
 .row-content {
   padding: 50px 0;
@@ -68,21 +84,20 @@ header {
   font-weight: bold;
   font-size: 80%;
   margin-right: 10px;
-  margin-left: 10px
+  margin-left: 10px;
 }
-
 
 .carousel-caption {
   background-color: $color-black-transparent;
 }
 
-.carousel {
-  border: $color-pale;
-}
-
+// .carousel {
+//   border: $color-pale;
+// }
 
 #carouselButton {
   position: absolute;
   right: 0;
   bottom: 0;
 }
+

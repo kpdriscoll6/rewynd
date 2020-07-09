@@ -1,3 +1,5 @@
+/*placeholders */
+/*placeholders */
 .title {
   font-family: "Boogaloo";
   font-size: 225%;
@@ -23,13 +25,18 @@ h3 {
   font-family: "Boogaloo"; }
 
 h2 {
-  color: #3046c5; }
+  color: blue; }
 
-header h2 {
-  color: #cec8ff; }
+div label {
+  font-weight: bold; }
+
+.breadcrumb {
+  background-color: #f3e1d0;
+  font-family: "Boogaloo";
+  font-size: 25px; }
 
 .site-footer {
-  background-color: #F9F8EB;
+  background-color: #f9f8eb;
   padding: 20px 0; }
 
 .row-content {
@@ -38,7 +45,7 @@ header h2 {
   min-height: 200px; }
 
 .navbar {
-  background-color: #F9F8EB; }
+  background-color: #f9f8eb; }
 
 .nav-text {
   font-weight: bold;
@@ -48,9 +55,6 @@ header h2 {
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
-
-.carousel {
-  border: #cec8ff; }
 
 #carouselButton {
   position: absolute;
