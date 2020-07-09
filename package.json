@@ -1,25 +1,36 @@
 {
-  "name": "dejayou",
+  "name": "rewynd",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "lite": "lite-server",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kpdriscoll6/dejayou.git"
+    "url": "git+https://github.com/kpdriscoll6/rewynd.git"
   },
-  "author": "",
+  "author": "KPD",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kpdriscoll6/dejayou/issues"
-  },
-  "homepage": "https://github.com/kpdriscoll6/dejayou#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.0.0",
+    "imagemin-cli": "^3.0.0",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.12.0",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.1",
+    "rimraf": "^2.6.2",
+    "usemin-cli": "^0.5.1"
   },
   "dependencies": {
     "boostrap": "^2.0.0",
@@ -28,3 +39,4 @@
     "popper.js": "^1.16.1"
   }
 }
+
