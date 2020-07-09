@@ -1,12 +1,33 @@
-$color-primary: #3046c5;
-$color-secondary: #5637dd;
-$color-pale: #cec8ff;
-$color-mid: #901cad;
-$color-dark: #60106b;
+$color-primary: red; /*placeholders */
+$color-secondary:blue; /*placeholders */
+$color-mid: #F9F8EB;
+$color-dark: #532D1C;
+$color-dark-font: #333333;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 
-$body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;
+$body-font: "Arial";
+$header-font: "Boogaloo";
+$title-font:"Boogaloo";
+
+
+.title{
+  font-family: $title-font;
+  font-size: 225%;
+  color: $color-dark-font;
+  }
+
+.logo {
+  height: auto; 
+  width: 60px;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(7%) saturate(3813%) hue-rotate(333deg) brightness(94%) contrast(97%);
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item:hover .nav-link {
+    color:$color-dark-font;
+}
 
 body {
   font-family: $body-font;
@@ -29,21 +50,8 @@ header {
 }
 
 .site-footer {
-  background-image: linear-gradient($color-pale, white);
+  background-color:  $color-mid;
   padding: 20px 0;
-}
-
-.jumbotron {
-  /* set margin = 0 to remove margin on jumbotron & push navbar tight to jubotron */
-  margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(
-    to right,
-    $color-secondary,
-    $color-primary,
-    $color-dark
-  );
-  color: white;
 }
 
 .row-content {
@@ -56,6 +64,14 @@ header {
   background-color: $color-mid;
 }
 
+.nav-text {
+  font-weight: bold;
+  font-size: 80%;
+  margin-right: 10px;
+  margin-left: 10px
+}
+
+
 .carousel-caption {
   background-color: $color-black-transparent;
 }
@@ -63,6 +79,7 @@ header {
 .carousel {
   border: $color-pale;
 }
+
 
 #carouselButton {
   position: absolute;

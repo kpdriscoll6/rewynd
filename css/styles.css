@@ -1,82 +1,58 @@
-body {
-    font-family: "Open Sans", sans-serif;
-}
+.title {
+  font-family: "Boogaloo";
+  font-size: 225%;
+  color: #333333; }
 
-h1, h2, h3 {
-    font-family: "Boogaloo";
-}
+.logo {
+  height: auto;
+  width: 60px;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(7%) saturate(3813%) hue-rotate(333deg) brightness(94%) contrast(97%); }
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link:active,
+.navbar-light .nav-item .nav-link:focus,
+.navbar-light .nav-item:hover .nav-link {
+  color: #333333; }
+
+body {
+  font-family: "Arial"; }
+
+h1,
+h2,
+h3 {
+  font-family: "Boogaloo"; }
 
 h2 {
-    color: #3046C5;
-}
+  color: #3046c5; }
 
 header h2 {
-    color: black;
-}
+  color: #cec8ff; }
 
 .site-footer {
-    background-color: #F9F8EB;
-    padding: 20px 0;
-}
-
-.jumbotron {
-    /* set margin = 0 to remove margin on jumbotron & push navbar tight to jubotron */
-    margin: 0;
-    padding: 30px;
-    background-color: #fff7e6;
-    /*
-    background-image:
-    linear-gradient(
-        290deg, 
-        #fff7e6,
-        #fff7e6 70%,
-        #0283c7 70%,
-        #0283c7 74.75%,
-        #fff7e6 74.5%,
-        #fff7e6 75%,
-        #78ab2a 75%,
-        #78ab2a 79.5%,
-        #fff7e6 79.5%,
-        #fff7e6 80%,
-        #fde916 80%,
-        #fde916 84.5%,
-        #fff7e6 84.5%,
-        #fff7e6 85%,
-        #f46716 85%,
-        #f46716 89.5%,
-        #fff7e6 89.5%,
-        #fff7e6 90%,
-        #fd2475 90%,
-        #fd2475 94.5%,
-        #fff7e6 94.5%,
-        #fff7e6 100%
-      ); */
-      /*
-    linear-gradient(
-        60deg, 
-        #f8f2dc,
-        #f8f2dc 70%,
-        #f9bf03 70%,
-        #f9bf03 75%,
-        #f87d07 75%,
-        #f87d07 80%,
-        #f9720b 80%,
-        #f9720b 85%,
-        #bb0d2a 85%,
-        #bb0d2a 90%,
-        #cb279d 90%,
-        #cb279d 100%
-      );*/
-    color: black;
-}
+  background-color: #F9F8EB;
+  padding: 20px 0; }
 
 .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
 
 .navbar {
-    background-color:  #F9F8EB;
-    height: 150px;
-}
+  background-color: #F9F8EB; }
+
+.nav-text {
+  font-weight: bold;
+  font-size: 80%;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: #cec8ff; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
