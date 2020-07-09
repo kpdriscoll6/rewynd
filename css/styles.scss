@@ -5,10 +5,12 @@ $color-dark: #532d1c;
 $color-dark-font: #333333;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 $color-breadcrumb-background: #f3e1d0;
+$color-body-background: #f3e1d0;
 
 $body-font: "Arial";
 $header-font: "Boogaloo";
 $title-font: "Boogaloo";
+$footer-font: "Boogaloo";
 
 .title {
   font-family: $title-font;
@@ -49,6 +51,9 @@ div {
     font-weight: bold;
   }
 }
+footer {
+  font-family: $footer-font;
+}
 
 // header {
 //   h2 {
@@ -56,19 +61,16 @@ div {
 //   }
 // }
 
-.breadcrumb{
+.breadcrumb {
   background-color: $color-breadcrumb-background;
   font-family: $title-font;
   font-size: 25px;
 }
 
-
 .site-footer {
   background-color: $color-mid;
   padding: 20px 0;
 }
-
-
 
 .row-content {
   padding: 50px 0;
@@ -94,10 +96,16 @@ div {
 // .carousel {
 //   border: $color-pale;
 // }
+.bodySection {
+  background-color: $color-body-background;
+}
+
+#footerEmail {
+  background-color: $color-mid;
+}
 
 #carouselButton {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-

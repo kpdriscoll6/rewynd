@@ -30,6 +30,9 @@ h2 {
 div label {
   font-weight: bold; }
 
+footer {
+  font-family: "Boogaloo"; }
+
 .breadcrumb {
   background-color: #f3e1d0;
   font-family: "Boogaloo";
@@ -55,6 +58,12 @@ div label {
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
+
+.bodySection {
+  background-color: #f3e1d0; }
+
+#footerEmail {
+  background-color: #f9f8eb; }
 
 #carouselButton {
   position: absolute;
