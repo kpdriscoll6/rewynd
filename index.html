@@ -143,7 +143,76 @@
             <h3>VHS TO DIGITAL CONVERSION</h3>
           </div>
           <div class="card-body">
-            <h5 class="card-title p-2">ORDER FORM HERE</h5>
+            <form id="reserveForm">
+              <div class="row form-group">
+                <label for="numCampers" class="col-sm-6 col-form-label"
+                  ><h5>Number of Tapes</h5></label
+                >
+                <div class="col">
+                  <select
+                    name="numCampers"
+                    id="numCampers"
+                    class="form-control"
+                  >
+                    <option selected>Select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col p">
+                  <h5>How would you like to receive your video?</h5>
+                </div>
+                <div class = "col">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="usb" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="usb">I want a USB Drive!</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="link" name="customRadio" class="custom-control-input" checked>
+                  <label class="custom-control-label" for="link">I want a download link!"</label>
+                </div>
+              </div>
+              </div>
+              <div class="row form-group">
+                <div class="col p">
+                  <h5>How would you like to receive your video?</h5>
+                </div>
+                <div class = "col">
+                <div>
+                  <input type="checkbox" id="color_correction" name="color_correction">
+                  <label class="label" for="color_correction">Include color correction</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="denoise" name="denoise">
+                  <label class="label" for="denoise">Include denoising</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="upscaling" name="upscaling">
+                  <label class="label" for="upscaling">Include upscaling</label>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-sm-6">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-sm"
+                  >
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-primary btn-sm">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
