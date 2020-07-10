@@ -168,43 +168,62 @@
                 <div class="col p">
                   <h5>How would you like to receive your video?</h5>
                 </div>
-                <div class = "col">
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="usb" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="usb">I want a USB Drive!</label>
+                <div class="col">
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="usb"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="usb"
+                      >I want a USB Drive!</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="link"
+                      name="customRadio"
+                      class="custom-control-input"
+                      checked
+                    />
+                    <label class="custom-control-label" for="link"
+                      >I want a download link!"</label
+                    >
+                  </div>
                 </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="link" name="customRadio" class="custom-control-input" checked>
-                  <label class="custom-control-label" for="link">I want a download link!"</label>
-                </div>
-              </div>
               </div>
               <div class="row form-group">
                 <div class="col p">
                   <h5>How would you like to receive your video?</h5>
                 </div>
-                <div class = "col">
-                <div>
-                  <input type="checkbox" id="color_correction" name="color_correction">
-                  <label class="label" for="color_correction">Include color correction</label>
+                <div class="col">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="color_correction"
+                      name="color_correction"
+                    />
+                    <label class="label" for="color_correction"
+                      >Include color correction</label
+                    >
+                  </div>
+                  <div>
+                    <input type="checkbox" id="denoise" name="denoise" />
+                    <label class="label" for="denoise">Include denoising</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="upscaling" name="upscaling" />
+                    <label class="label" for="upscaling"
+                      >Include upscaling</label
+                    >
+                  </div>
                 </div>
-                <div>
-                  <input type="checkbox" id="denoise" name="denoise">
-                  <label class="label" for="denoise">Include denoising</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="upscaling" name="upscaling">
-                  <label class="label" for="upscaling">Include upscaling</label>
-                </div>
-              </div>
-              </div>
               </div>
               <div class="row form-group">
                 <div class="col-sm-6">
-                  <button
-                    type="button"
-                    class="btn btn-secondary btn-sm"
-                  >
+                  <button type="button" class="btn btn-secondary btn-sm">
                     Cancel
                   </button>
                   <button type="submit" class="btn btn-primary btn-sm">
