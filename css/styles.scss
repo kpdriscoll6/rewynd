@@ -4,8 +4,10 @@ $color-mid: #f9f8eb;
 $color-dark: #532d1c;
 $color-dark-font: #333333;
 $color-black-transparent: rgba(0, 0, 0, 0.6);
-$color-breadcrumb-background: #f3e1d0;
-$color-body-background: #f3e1d0;
+$color-breadcrumb-background: #ebecf9;
+$color-body-background: #ebecf9;
+$color-body-font: #53350a;
+$color-header-font: #3c2607;
 
 $body-font: "Arial";
 $header-font: "Boogaloo";
@@ -34,7 +36,7 @@ $footer-font: "Boogaloo";
 
 body {
   font-family: $body-font;
-  color:white;
+  color: $color-body-font;
 }
 
 h1 {
@@ -48,7 +50,7 @@ h3 {
 }
 
 h2 {
-  color: $color-secondary;
+  color: $color-header-font;
 }
 
 div {
@@ -57,15 +59,14 @@ div {
   }
 }
 
-.card-img-top{
+.card-img-top {
   height: 250px; // Need to fix this later
   width: auto;
 }
 
-.card-header{
-  background-color:rgba(0, 0, 0, 0.4);
+.card-header {
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 footer {
   font-family: $footer-font;
@@ -127,7 +128,6 @@ footer {
   bottom: 0;
 }
 
-
 .row1 {
   background: url("../img/venus.png");
 }
@@ -137,10 +137,9 @@ footer {
 }
 
 .row3 {
-  
   background: url("../img/grand_tour.png");
 }
 
-.card{
-  background-color:$color-black-transparent;
+.card {
+  background-color: $color-black-transparent;
 }
