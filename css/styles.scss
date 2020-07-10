@@ -3,7 +3,7 @@ $color-secondary: blue; /*placeholders */
 $color-mid: #f9f8eb;
 $color-dark: #532d1c;
 $color-dark-font: #333333;
-$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-black-transparent: rgba(0, 0, 0, 0.6);
 $color-breadcrumb-background: #f3e1d0;
 $color-body-background: #f3e1d0;
 
@@ -34,9 +34,14 @@ $footer-font: "Boogaloo";
 
 body {
   font-family: $body-font;
+  color:white;
 }
 
-h1,
+h1 {
+  font-family: $header-font;
+  color: $color-dark-font;
+}
+
 h2,
 h3 {
   font-family: $header-font;
@@ -51,8 +56,20 @@ div {
     font-weight: bold;
   }
 }
+
+.card-img-top{
+  height: 250px; // Need to fix this later
+  width: auto;
+}
+
+.card-header{
+  background-color:rgba(0, 0, 0, 0.4);
+}
+
+
 footer {
   font-family: $footer-font;
+  color: $color-dark-font;
 }
 
 // header {
@@ -108,4 +125,22 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+
+.row1 {
+  background: url("../img/venus.png");
+}
+
+.row2 {
+  background: url("../img/trappist.png");
+}
+
+.row3 {
+  
+  background: url("../img/grand_tour.png");
+}
+
+.card{
+  background-color:$color-black-transparent;
 }

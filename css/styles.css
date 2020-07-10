@@ -17,9 +17,13 @@
   color: #333333; }
 
 body {
-  font-family: "Arial"; }
+  font-family: "Arial";
+  color: white; }
 
-h1,
+h1 {
+  font-family: "Boogaloo";
+  color: #333333; }
+
 h2,
 h3 {
   font-family: "Boogaloo"; }
@@ -30,8 +34,16 @@ h2 {
 div label {
   font-weight: bold; }
 
+.card-img-top {
+  height: 250px;
+  width: auto; }
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.4); }
+
 footer {
-  font-family: "Boogaloo"; }
+  font-family: "Boogaloo";
+  color: #333333; }
 
 .breadcrumb {
   background-color: #f3e1d0;
@@ -57,7 +69,7 @@ footer {
   margin-left: 10px; }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .bodySection {
   background-color: #f3e1d0; }
@@ -69,3 +81,15 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+.row1 {
+  background: url("../img/venus.png"); }
+
+.row2 {
+  background: url("../img/trappist.png"); }
+
+.row3 {
+  background: url("../img/grand_tour.png"); }
+
+.card {
+  background-color: rgba(0, 0, 0, 0.6); }
