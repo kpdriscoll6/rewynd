@@ -75,6 +75,9 @@ footer {
 .bodySection {
   background-color: #ebecf9; }
 
+#takeUpSpace {
+  height: 150px; }
+
 #footerEmail {
   background-color: #f9f8eb; }
 
@@ -97,3 +100,7 @@ footer {
 
 .card {
   background-color: rgba(0, 0, 0, 0.6); }
+
+@media screen and (min-width: 1000px) {
+  #takeUpSpace {
+    height: 200px; } }
