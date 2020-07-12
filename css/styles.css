@@ -18,7 +18,8 @@
 
 body {
   font-family: "Arial";
-  color: #53350a; }
+  color: #53350a;
+  overflow-x: hidden; }
 
 h1 {
   font-family: "Boogaloo";
@@ -81,6 +82,9 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+#indexBody {
+  width: 100%; }
 
 .row1 {
   background: url("../img/venus.png"); }

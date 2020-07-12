@@ -37,6 +37,7 @@ $footer-font: "Boogaloo";
 body {
   font-family: $body-font;
   color: $color-body-font;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -126,6 +127,9 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+#indexBody {
+  width: 100%;
 }
 
 .row1 {
