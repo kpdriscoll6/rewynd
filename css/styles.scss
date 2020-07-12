@@ -121,6 +121,9 @@ footer {
 #takeUpSpace {
   height: 150px;
 }
+#takeUpLessSpace {
+  height: 100px;
+}
 #accordion {
   .card {
     background-color: white;
@@ -159,5 +162,8 @@ footer {
 @media screen and (min-width: 1000px) {
   #takeUpSpace {
     height: 200px;
+  }
+  #takeUpLessSpace {
+    height: 150px;
   }
 }
