@@ -86,7 +86,6 @@ footer {
   font-size: 25px;
 }
 
-
 .site-footer {
   background-color: $color-mid;
   padding: 20px 0;
@@ -122,6 +121,11 @@ footer {
 #takeUpSpace {
   height: 150px;
 }
+#accordion {
+  .card {
+    background-color: white;
+  }
+}
 
 #footerEmail {
   background-color: $color-mid;
@@ -152,7 +156,7 @@ footer {
   background-color: $color-black-transparent;
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width: 1000px) {
   #takeUpSpace {
     height: 200px;
   }

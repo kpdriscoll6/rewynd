@@ -78,6 +78,9 @@ footer {
 #takeUpSpace {
   height: 150px; }
 
+#accordion .card {
+  background-color: white; }
+
 #footerEmail {
   background-color: #f9f8eb; }
 
