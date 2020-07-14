@@ -1,6 +1,6 @@
 $color-primary: red; /*placeholders */
 $color-secondary: blue; /*placeholders */
-$color-mid: #f9f8eb;
+$color-mid: rgba(250, 250, 250, 0.97); //#f9f8eb;
 $color-dark: #532d1c;
 $color-dark-font: #333333;
 $color-black-transparent: rgba(0, 0, 0, 0.6);
@@ -8,6 +8,10 @@ $color-breadcrumb-background: #ebecf9;
 $color-body-background: #ebecf9;
 $color-body-font: #53350a;
 $color-header-font: #3c2607;
+$color-background: #f8f8ff;
+
+//https://www.color-hex.com/color-palette/5361
+
 
 $body-font: "Arial";
 $header-font: "Boogaloo";
@@ -23,8 +27,9 @@ $footer-font: "Boogaloo";
 .logo {
   height: auto;
   width: 60px;
-  filter: brightness(0) saturate(100%) invert(20%) sepia(7%) saturate(3813%)
-    hue-rotate(333deg) brightness(94%) contrast(97%);
+  //WHAT COLOR SHOULD LOGO BE?
+  //filter: brightness(0) saturate(100%) invert(20%) sepia(7%) saturate(3813%)
+    //hue-rotate(333deg) brightness(94%) contrast(97%);
 }
 
 .navbar-light .nav-item.active .nav-link,
@@ -40,19 +45,20 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-family: $header-font;
-  color: $color-dark-font;
-}
-
+h1,
 h2,
 h3 {
   font-family: $header-font;
+  color:$color-dark-font
 }
 
-h2 {
-  color: $color-header-font;
-}
+.card{
+  h1,
+  h2,
+  h3 { 
+    font-family: $header-font;
+    color:white
+  }}
 
 div {
   label {
@@ -73,12 +79,6 @@ footer {
   font-family: $footer-font;
   color: $color-dark-font;
 }
-
-// header {
-//   h2 {
-//     color: $color-pale;
-//   }
-// }
 
 .breadcrumb {
   background-color: $color-breadcrumb-background;
@@ -112,9 +112,9 @@ footer {
   background-color: $color-black-transparent;
 }
 
-// .carousel {
-//   border: $color-pale;
-// }
+.carousel {
+ ///CAROUSEL CSS GOES HERE
+}
 .bodySection {
   background-color: $color-body-background;
 }
@@ -144,19 +144,23 @@ footer {
 }
 
 .row1 {
-  background: url("../img/venus.png");
+  //background: url("../img/venus.png");
+  background-color:#bae1ff;
 }
 
 .row2 {
-  background: url("../img/trappist.png");
+  //background: url("../img/trappist.png");
+  background-color: #ffffba;
 }
 
 .row3 {
-  background: url("../img/grand_tour.png");
+  //background: url("../img/grand_tour.png");
+  background-color: #baffc9;
 }
 
 .card {
   background-color: $color-black-transparent;
+  color:white;
 }
 
 @media screen and (min-width: 1000px) {

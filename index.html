@@ -48,7 +48,7 @@
         </button>
         <div class="collapse navbar-collapse" id="rewyndNavbar">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item active border-right">
+            <li class="nav-item border-right">
               <a class="nav-link" href="aboutus.html"
                 ><span class="nav-text">ABOUT US</span>
               </a>
@@ -84,7 +84,7 @@
       </div>
     </nav>
     <div id="indexBody">
-      <div class="row row1">
+      <div class="row m-3 row1">
         <div class="col-12 ml-4 mt-4">
           <h1>What is Rewynd?</h1>
         </div>
@@ -133,11 +133,11 @@
         </div>
       </div>
 
-      <div class="row row2">
+      <div class="row m-3 row2">
         <div class="col-12 ml-5 mt-5">
-          <h1 style="color: white;">Order</h1>
+          <h1>Order</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="card mx-5 mt-3 mb-5">
             <div class="card-header">
               <h3>VHS TO DIGITAL CONVERSION</h3>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="row form-group">
                   <div class="col p">
-                    <h5>How would you like to receive your video?</h5>
+                    <h5>Add-on Features:</h5>
                   </div>
                   <div class="col">
                     <div>
@@ -237,33 +237,85 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card m-4">
-            IMAGE CAROUSEL HERE
+        <div class="col-lg-6">
+          <div id="homeCarousel" class="carousel slide mt-3" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#homeCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#homeCarousel" data-slide-to="1"></li>
+              <li data-target="#homeCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="img/slider01.jpg"
+                  alt="alt text 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="img/slider02.jpg"
+                  alt="alt text 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="img/slider03.jpg"
+                  alt="alt text 3"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#homeCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#homeCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
-      <div class="row row3">
+      <div class="row m-3 row3">
+        <div class="col-12 ml-5 mt-5">
+          <h1>Add-on Features</h1>
+        </div>
         <div class="col-lg-4">
-          <div class="card my-5 mx-4">
+          <div class="card m-4">
             <img
               class="card-img-top img-fluid"
               src="/img/histogram.png"
               alt="histogram"
             />
-            <div class="card-body">
+            <div class="card-body border-secondary">
               <h5 class="card-title p-2">Color Balancing</h5>
               <p class="card-text p-2">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. "
+                nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card my-5 mx-4">
+          <div class="card m-4">
             <img
               class="card-img-top img-fluid"
               src="/img/donoising.jpg"
@@ -272,28 +324,28 @@
             <div class="card-body">
               <h5 class="card-title p-2">Denoising</h5>
               <p class="card-text p-2">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. "
+                nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="card my-5 mx-4">
+          <div class="card m-4">
             <img
               class="card-img-top img-fluid"
               src="/img/upscaling.png"
               alt="upscaling"
             />
             <div class="card-body">
-              <h5 class="card-title p-2">Color Balancing</h5>
+              <h5 class="card-title p-2">Upscaling</h5>
               <p class="card-text p-2">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. "
+                nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
           </div>
