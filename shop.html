@@ -33,7 +33,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top p-2">
       <div class="container">
-        <a class="navbar-brand ml-3" href="#"
+        <a class="navbar-brand ml-3" href="index.html"
           ><span class="logo"
             ><img src="img/logo.svg" class="logo mb-3"
           /></span>
@@ -59,8 +59,8 @@
                 ><span class="nav-text">HOW IT WORKS</span>
               </a>
             </li>
-            <li class="nav-item border-right">
-              <a class="nav-link" href="shop.html">
+            <li class="nav-item border-right active">
+              <a class="nav-link" href="#">
                 <span class="nav-text">SHOP</span></a
               >
             </li>
@@ -85,63 +85,11 @@
       </div>
     </nav>
     <div id="indexBody">
-      <div class="row m-3 row1">
-        <div class="col-12 ml-4 mt-4">
-          <h1>What is Rewynd?</h1>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card m-4 p-3">
-                <!--Need to make the iframe height responsive later, but don't know how yet-->
-                <iframe
-                  width="100%"
-                  height="450px"
-                  src="https://www.youtube.com/embed/EE-xtCF3T94"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card m-4 p-4">
-                    <h2>Heading 1</h2>
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="card m-4 p-4">
-                    <h2>Heading 2</h2>
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row m-3 row2">
-        <div class="col-12 ml-5 mt-5">
-          <h1>Results</h1>
-        </div>
-        <div class="col-12 px-5 pt-3 pb-5">
+      <div class="row m-3 row3">
+        <div class="col-lg-6">
           <div
             id="homeCarousel"
-            class="carousel slide p-3"
+            class="carousel slide mt-3"
             data-ride="carousel"
           >
             <ol class="carousel-indicators">
@@ -196,62 +144,114 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="row m-3 row3">
-        <div class="col-12 ml-5 mt-5">
-          <h1>Features</h1>
-        </div>
-        <div class="col-lg-4">
-          <div class="card m-4">
-            <img
-              class="card-img-top img-fluid"
-              src="/img/histogram.png"
-              alt="histogram"
-            />
-            <div class="card-body border-secondary">
-              <h5 class="card-title p-2">Color Balancing</h5>
-              <p class="card-text p-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+        <div class="col-lg-6">
+          <div class="card mx-5 mt-3 mb-5">
+            <div class="card-header">
+              <h3>VHS TO DIGITAL CONVERSION</h3>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card m-4">
-            <img
-              class="card-img-top img-fluid"
-              src="/img/donoising.jpg"
-              alt="denoising"
-            />
             <div class="card-body">
-              <h5 class="card-title p-2">Denoising</h5>
-              <p class="card-text p-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card m-4">
-            <img
-              class="card-img-top img-fluid"
-              src="/img/upscaling.png"
-              alt="upscaling"
-            />
-            <div class="card-body">
-              <h5 class="card-title p-2">Upscaling</h5>
-              <p class="card-text p-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+              <form id="reserveForm">
+                <div class="row form-group">
+                  <label for="numTapes" class="col-6 p-3 col-form-label"
+                    ><h5>
+                      How many Tapes?
+                    </h5></label
+                  >
+                  <div class="col-6 p-3">
+                    $15.00 each
+                  </div>
+                  <div class="col-6 px-4">
+                    <select name="numTapes" id="numTapes" class="form-control">
+                      <option selected>Select...</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-12 px-3 py-2">
+                    <h5>Which format?</h5>
+                  </div>
+                  <div class="col-6 px-4">
+                    <div class="custom-control custom-radio py-2">
+                      <input
+                        type="radio"
+                        id="usb"
+                        name="customRadio"
+                        class="custom-control-input"
+                      />
+                      <label class="custom-control-label" for="usb"
+                        >I want a USB Drive!</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        id="link"
+                        name="customRadio"
+                        class="custom-control-input"
+                        checked
+                      />
+                      <label class="custom-control-label" for="link"
+                        >I want a download link!</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 py-2">
+                    +$3.00 <br />
+                    +$0.00
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-12 px-3 py-2">
+                    <h5>Add-on Features:</h5>
+                  </div>
+                  <div class="col-6 px-4 py-1">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" />
+                      <label class="custom-control-label" for="customCheck1"
+                        >Include Color Balancing</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    +$2.00
+                  </div>
+                  <div class="col-6 px-4 py-1">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" />
+                      <label class="custom-control-label" for="customCheck1"
+                        >Include Denoising</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    +$3.00
+                  </div>
+                  <div class="col-6 px-4 py-1">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" />
+                      <label class="custom-control-label" for="customCheck1"
+                        >Include Upscaling</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    +$10.00
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-lg btn-primary">
+                      Add to Cart $XX.00
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -303,17 +303,19 @@
             <button type="submit" class="btn btn-danger">sign up</button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 offset-8">
-            Icons made by
-            <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-              >Freepik</a
-            >
-            from
-            <a href="https://www.flaticon.com/" title="Flaticon"
-              >www.flaticon.com</a
-            >
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-12 offset-8">
+          Icons made by
+          <a
+            href="https://www.flaticon.com/authors/pixel-perfect"
+            title="Pixel perfect"
+            >Pixel perfect</a
+          >
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com</a
+          >
         </div>
       </div>
     </footer>
