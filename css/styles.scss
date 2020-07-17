@@ -57,7 +57,7 @@ h3 {
   h2,
   h3 { 
     font-family: $header-font;
-    color:white
+    color:white;
   }}
 
 div {
@@ -124,11 +124,19 @@ footer {
 #takeUpLessSpace {
   height: 100px;
 }
-#accordion {
-  .card {
-    background-color: white;
-  }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
+
+
 
 #footerEmail {
   background-color: $color-mid;
