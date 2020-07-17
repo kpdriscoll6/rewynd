@@ -113,3 +113,6 @@ footer {
     height: 200px; }
   #takeUpLessSpace {
     height: 150px; } }
+
+.list-group-item {
+  color: #333333; }
